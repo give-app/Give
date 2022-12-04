@@ -46,18 +46,6 @@ When exporting only the older `.bin` aet (and `*_db.bin`) format is natively sup
 
 
 
-## Problems (Unfixable?)
-There's a general degradation of image quality due to lossy GPU texture compression as is to be expected, though definitely not the end of the world.
-
-More importantly however, keyframe interpolation is basically broken as a byproduct of trying to minimize data loss that comes from importing and a fundamental limitation in the file format itself.
-All interpolation options inside AE are therefore ignored and duplicate "balancing" keyframes surrounding all other regular keyframes may have to be inserted *manually* for newly created animations. 
-
-As far as I can tell there is no real way to fix this while still supporting both *importing* and *exporting* and also not loosing *even more* data.
-Broadly speaking, **the AE preview cannot be trusted** and this is the single biggest problem with this plugin and what makes me very hesitant in recommending anyone use this for any serious kind of work.
-
-
-
-
 ## Why you *shouldn't* use this (we're in for the memes)
 After Effects is slow. *Very* slow. **Comedically slow**. If you are an unfortunate soul stumbling upon this for the first time... *no*. It is not in fact *your computer*. After Effects *really is* uncapable of smoothly animating *even a single image* moving around *in real time* without pre-rendering the whole animation in memory and spamming your disk cache folder with *gigabytes* worth of raw frames in the process. No matter your fancy new 69-Core quantum-accelerated CPU. "This is fine" - Adobe, apparently.
 
